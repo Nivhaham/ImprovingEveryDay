@@ -1,0 +1,20 @@
+
+#secondElem{
+    color: blue;
+    font-size: 36px;
+}
+#forthElem{
+    background-color: red;
+    font: 24px;
+    font-weight: bold;
+}
+
+.oddNumber{
+    background-color: yellow;
+}
+
+
+.thirdElem{
+    font-size: 24px;
+}
+

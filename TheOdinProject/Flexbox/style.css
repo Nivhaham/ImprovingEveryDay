@@ -1,0 +1,21 @@
+.flex-container {
+    display: flex; 
+  }
+  
+  .flex-container > div {
+    background: peachpuff;
+    border: 4px solid brown;
+    height: 100px;
+    flex: 1; 
+  }
+
+.one {
+    display: flex;
+}
+
+.one div {
+    background: peachpuff;
+    border: 4px solid brown;
+    height: 95px;
+    flex: 1;
+}
