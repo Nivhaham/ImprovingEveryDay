@@ -1,0 +1,28 @@
+const {checkInventory, processPayment, shipOrder} = require('./library.js');
+/*Will not work because of that reason:
+In general, you don't use both "type": "module" and "type": "commonjs" in the same package.
+json file, as it would be confusing and might lead to unexpected behavior.
+Choose the one that aligns with your project's module system. */
+
+
+
+const order = {
+  items: [['sunglasses', 1], ['bags', 2]],
+  giftcardBalance: 79.82
+};
+
+checkInventory(order)
+.then((resolvedValueArray) => {
+  // Write the correct return statement here:
+ return processPayment(resolvedValueArray)
+})
+.then((resolvedValueArray) => {
+  // Write the correct return statement here:
+  return shipOrder(resolvedValueArray)
+})
+.then((successMessage) => {
+  console.log(successMessage);
+})
+.catch((errorMessage) => {
+  console.log(errorMessage);
+});
