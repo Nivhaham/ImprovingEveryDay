@@ -1,0 +1,18 @@
+const {checkInventory} = require('./library.js');
+
+const order = [['sunglasses', 1], ['bags', 2]];
+
+// Write your code below:
+const checkInventory = (arr) => new Promise((resolve,reject) => {
+  const allValuesExist = arr.every(value => order.includes(value));
+  if (allValuesExist)
+    resolve ("Thank you. Your order was successful.")
+  else 
+    reject("We're sorry. Your order could not be completed because some items are sold out")
+
+  }
+)
+
+const handleSuccess = (resolvedValue) => {
+  console.log(resolvedValue)
+};
